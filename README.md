@@ -1,4 +1,4 @@
-> **© 2024-present [你的 GitHub 用户名] · All Rights Reserved**
+> **© 2026-present [7toCR] · All Rights Reserved**
 >
 > **欢迎免费公开使用，但严禁将本项目直接复制到其他仓库并声称是你的原创成果。如需引用或参考，请注明原始来源并链接回本仓库。**
 >
@@ -922,5 +922,6 @@
 
 # 其他说明
 
-本项目的 LICENSE 文件采用 MIT License。
+本项目的 LICENSE 文件采用 [MIT License](LICENSE)。
+详细社区使用规范请参阅 [CLAUSE.md](CLAUSE.md)。
 
