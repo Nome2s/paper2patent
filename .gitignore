@@ -3,6 +3,8 @@ test/
 plan/
 reference_skills/
 user.md
+Agent.md
+
 
 # Generated outputs and temporary files
 *.log
