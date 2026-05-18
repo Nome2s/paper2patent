@@ -4,6 +4,7 @@ plan/
 reference_skills/
 user.md
 Agent.md
+.gitignore
 
 
 # Generated outputs and temporary files

@@ -4,6 +4,7 @@ Use this reference when the user asks for a complete patent application document
 
 ## Default Deliverable
 
+
 - Generate a `.docx` file as the primary deliverable.
 - Generate source-faithful black-and-white SVG reference drawings, create PNG fallback drawings when possible, generate Image2-style refinement prompts, and embed visible drawings in the `.docx` for complete application requests.
 - Export a `.pdf` copy when LibreOffice or an equivalent DOCX-to-PDF converter is available.

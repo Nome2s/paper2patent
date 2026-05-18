@@ -9,6 +9,8 @@ using Pillow. The fallback PDF is image-based and intended as a review copy.
 
 from __future__ import annotations
 
+
+
 import argparse
 import json
 import os

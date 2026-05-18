@@ -12,6 +12,7 @@ Require enough source material to identify the invention:
 
 Do not infer technical details merely to complete a patent structure.
 
+
 For `direct` mode, generate the requested file with explicit `【待补充：...】` placeholders and a material gap section when minimum input is missing. For `human-in-loop` mode, ask for missing parts before drafting if the gap affects the technical solution or claim scope.
 
 ## Preferred Input Format

@@ -10,6 +10,7 @@ Run this checklist internally before final output or when reviewing a draft. Rep
 - Paper wording has been transformed into patent language rather than copied verbatim.
 - Generated drawings are traceable to source paper figures, figure captions, method text, claims, or specification, not to generic sample nodes.
 
+
 ## Patent Logic
 
 - Difference point, technical problem, technical solution, and technical effect form a coherent chain.

@@ -9,6 +9,7 @@
 - Dependent claims must cite an earlier claim that actually contains the referenced feature.
 - Multi-dependent claims must not depend on other multi-dependent claims.
 - Do not copy paper sentences directly. Rewrite into patent step or module language.
+  
 
 ## Independent Claims
 

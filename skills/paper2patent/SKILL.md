@@ -7,6 +7,7 @@ description: Convert academic papers into complete Chinese invention patent appl
 
 ## Purpose
 
+
 Use this skill to convert an academic paper into a complete Chinese invention patent application deliverable. The default full-draft output is a Word document (`.docx`) and, when a converter is available, a PDF copy. Keep the work faithful to the supplied paper: do not invent technical features, embodiments, data, hardware, scenarios, or effects that are not present in the source material.
 
 ## Workflow

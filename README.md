@@ -36,27 +36,14 @@
 ## 📑 目录 (Table of Contents)
 
 ###锦囊妙计
-- [paper2patent Skills](#paper2patent-skills)
-
 - [论文转专利Flash](#论文转专利Flash)
 
 - [论文转专利Pro](#论文转专利Pro)
 
 - [专利附图生成（Gemini）](#专利附图生成gemini)
 
+- [paper2patent Skills](#paper2patent-skills)
 
----
-
-## paper2patent Skills
-
-本仓库新增 `paper2patent` AI Skill，用于在支持 Skills 的 AI 工具中复用论文转中国发明专利的完整工作流。
-
-- `skills/paper2patent/`：标准 Skills 目录，作为本仓库维护的主版本。
-- `.claude/skills/paper2patent/`：Claude Code 项目级 Skill 镜像，与主版本保持同步。
-- `references/`：拆分保存输入要求、文本转换、权利要求与说明书规则、附图生成、文档生成和质量检查清单。
-- `scripts/`：提供专利附图、DOCX 申请文件和 PDF 导出的辅助脚本。
-
-使用时，在支持 Skills 的工具中引用 `paper2patent`，或将 `skills/paper2patent/` 同步到对应工具的 Skills 目录。所有专利文本和附图仍必须严格基于用户提供的论文原文，不保存未公开论文、生成草稿、密钥或个人数据到仓库。
 
 ---
 
@@ -1009,6 +996,65 @@
 【专利申请文本】：
 [在此粘贴已生成的完整专利申请文本，包括权利要求书和说明书]
 ````
+
+---
+
+## paper2patent Skills
+
+本仓库提供 `paper2patent` AI Skill，用于在支持 Skills 的 AI 工具中复用论文转中国发明专利的完整工作流。作者日常主要在 **Codex** 中使用，也兼容 Claude Code、Cursor、Windsurf 等以本地规则或 Skills 目录加载上下文的工具。
+
+### 目录结构
+
+- `skills/paper2patent/`：标准 Skills 目录，作为本仓库维护的主版本。
+- `.claude/skills/paper2patent/`：Claude Code 项目级 Skill 镜像，与主版本保持同步。
+- `skills/paper2patent/references/`：保存输入要求、文本转换、权利要求与说明书规则、附图生成、文档生成和质量检查清单。
+- `skills/paper2patent/scripts/`：提供专利附图、DOCX 申请文件和 PDF 导出的辅助脚本。
+
+### 安装与部署
+
+推荐方式是复制本仓库的 `skills/paper2patent/` 目录到目标工具可读取的 Skills 目录中，不依赖第三方安装器。
+
+**Codex（推荐）**
+
+Windows PowerShell 示例：
+
+```powershell
+New-Item -ItemType Directory -Force "$env:USERPROFILE\.codex\skills" | Out-Null
+Copy-Item -Recurse -Force .\skills\paper2patent "$env:USERPROFILE\.codex\skills\"
+```
+
+macOS / Linux 示例：
+
+```bash
+mkdir -p ~/.codex/skills
+cp -R skills/paper2patent ~/.codex/skills/
+```
+
+安装后，在 Codex 中直接说明任务即可触发：例如“使用 paper2patent skill，将这篇论文生成中国发明专利申请书 DOCX/PDF”。
+
+**Claude Code**
+
+项目级部署可使用仓库内置的 `.claude/skills/paper2patent/`。如需同步最新版，将 `skills/paper2patent/` 覆盖复制到 `.claude/skills/paper2patent/`，然后在 Claude Code 中提出论文转专利、权利要求撰写、说明书生成或忠实性检查需求。
+
+**Cursor**
+
+Cursor 可结合本仓库的 `.cursor/rules/paper2patent.mdc` 与 `.claude/skills/paper2patent/` 使用。建议打开 Cursor Settings 中的 Rules / Skills 相关区域，确认项目规则已加载，再用自然语言描述任务。
+
+**Windsurf**
+
+Windsurf 可使用 `.windsurf/rules/paper2patent.md` 作为项目规则，并引用 `skills/paper2patent/` 中的完整工作流。适合在仓库内直接处理专利文本、脚本和生成文件。
+
+**Gemini**
+
+Gemini 通常不直接读取本地 Skill 目录。建议使用本 README 中的“专利附图生成（Gemini）”Prompt，或将 `skills/paper2patent/SKILL.md` 与相关 `references/` 规则复制为对话上下文。
+
+### 使用示例
+
+- “请使用 paper2patent skill，将这篇论文生成中国发明专利申请书 DOCX/PDF。”
+- “请基于论文原文检查这份专利草稿是否存在编造内容。”
+- “根据已生成的权利要求书和说明书生成黑白专利附图。”
+
+使用时，所有专利文本和附图必须严格基于用户提供的论文原文。不要将未公开论文、生成草稿、密钥、个人数据或本地绝对路径保存到仓库。
 
 ---
 

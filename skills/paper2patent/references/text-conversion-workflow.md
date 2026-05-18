@@ -10,6 +10,7 @@
 6. Run the quality checklist and revise silently.
 7. Output the requested artifact: DOCX/PDF for full direct generation, or plain text only in `text-only` mode.
 
+
 Do not expose chain-of-thought, hidden analysis, self-reflection, or checklist results in the final draft.
 
 ## Five-Part Patent Structure

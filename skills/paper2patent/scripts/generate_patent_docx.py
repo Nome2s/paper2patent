@@ -10,6 +10,7 @@ supports embedding black-and-white SVG patent drawings referenced by the
 
 from __future__ import annotations
 
+
 import argparse
 import json
 import re

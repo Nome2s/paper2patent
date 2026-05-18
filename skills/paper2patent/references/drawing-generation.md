@@ -4,7 +4,9 @@ Use this reference when the user asks for patent drawings, drawing prompts, draw
 
 ## Drawing Types
 
+
 Select only drawings supported by the source paper figures, captions, method text, claims, and specification:
+
 
 - Method flowchart: covers all steps of an independent method claim.
 - System block diagram: covers supported system modules and data/control relationships.
