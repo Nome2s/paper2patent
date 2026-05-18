@@ -1,0 +1,17 @@
+# Local-only working directories
+test/
+plan/
+reference_skills/
+user.md
+
+# Generated outputs and temporary files
+*.log
+*.tmp
+*.bak
+*.zip
+*.pyc
+__pycache__/
+
+# OS files
+.DS_Store
+Thumbs.db

@@ -36,12 +36,27 @@
 ## 📑 目录 (Table of Contents)
 
 ###锦囊妙计
+- [paper2patent Skills](#paper2patent-skills)
+
 - [论文转专利Flash](#论文转专利Flash)
 
 - [论文转专利Pro](#论文转专利Pro)
 
 - [专利附图生成（Gemini）](#专利附图生成gemini)
 
+
+---
+
+## paper2patent Skills
+
+本仓库新增 `paper2patent` AI Skill，用于在支持 Skills 的 AI 工具中复用论文转中国发明专利的完整工作流。
+
+- `skills/paper2patent/`：标准 Skills 目录，作为本仓库维护的主版本。
+- `.claude/skills/paper2patent/`：Claude Code 项目级 Skill 镜像，与主版本保持同步。
+- `references/`：拆分保存输入要求、文本转换、权利要求与说明书规则、附图生成、文档生成和质量检查清单。
+- `scripts/`：提供专利附图、DOCX 申请文件和 PDF 导出的辅助脚本。
+
+使用时，在支持 Skills 的工具中引用 `paper2patent`，或将 `skills/paper2patent/` 同步到对应工具的 Skills 目录。所有专利文本和附图仍必须严格基于用户提供的论文原文，不保存未公开论文、生成草稿、密钥或个人数据到仓库。
 
 ---
 
