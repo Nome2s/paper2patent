@@ -1016,21 +1016,28 @@
 
 **Codex（推荐）**
 
+
+```
+git clone https://github.com/7toCR/paper2patent.git
+cd paper2patent
+```
+
+
 Windows PowerShell 示例：
 
 ```powershell
-New-Item -ItemType Directory -Force "$env:USERPROFILE\.codex\skills" | Out-Null
 Copy-Item -Recurse -Force .\skills\paper2patent "$env:USERPROFILE\.codex\skills\"
 ```
 
 macOS / Linux 示例：
 
 ```bash
-mkdir -p ~/.codex/skills
 cp -R skills/paper2patent ~/.codex/skills/
 ```
 
-安装后，在 Codex 中直接说明任务即可触发：例如“使用 paper2patent skill，将这篇论文生成中国发明专利申请书 DOCX/PDF”。
+安装后，在 Codex 中直接说明任务或者使用$查找paper2patent使用：
+1.例如“使用 paper2patent skill，将这篇论文生成中国发明专利申请书 DOCX/PDF”。
+2.$paper2patent “将这篇论文生成中国发明专利申请书 DOCX/PDF”。
 
 **Claude Code**
 
