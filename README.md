@@ -1001,7 +1001,7 @@
 
 ## paper2patent Skills
 
-本仓库提供 `paper2patent` AI Skill，用于在支持 Skills 的 AI 工具中复用论文转中国发明专利的完整工作流。作者日常主要在 **Codex** 中使用，也兼容 Claude Code、Cursor、Windsurf 等以本地规则或 Skills 目录加载上下文的工具。
+本仓库提供 `paper2patent` AI Skill，用于在支持 Skills 的 AI 工具中复用论文转中国发明专利的完整工作流。作者主要在 **Codex** 中验证，也兼容 Claude Code、Cursor、Windsurf 等以本地规则或 Skills 目录加载上下文的工具。
 
 ### 目录结构
 
@@ -1044,18 +1044,11 @@ Cursor 可结合本仓库的 `.cursor/rules/paper2patent.mdc` 与 `.claude/skill
 
 Windsurf 可使用 `.windsurf/rules/paper2patent.md` 作为项目规则，并引用 `skills/paper2patent/` 中的完整工作流。适合在仓库内直接处理专利文本、脚本和生成文件。
 
-**Gemini**
-
-Gemini 通常不直接读取本地 Skill 目录。建议使用本 README 中的“专利附图生成（Gemini）”Prompt，或将 `skills/paper2patent/SKILL.md` 与相关 `references/` 规则复制为对话上下文。
-
 ### 使用示例
 
 - “请使用 paper2patent skill，将这篇论文生成中国发明专利申请书 DOCX/PDF。”
 - “请基于论文原文检查这份专利草稿是否存在编造内容。”
 - “根据已生成的权利要求书和说明书生成黑白专利附图。”
-
-使用时，所有专利文本和附图必须严格基于用户提供的论文原文。不要将未公开论文、生成草稿、密钥、个人数据或本地绝对路径保存到仓库。
-
 ---
 
 # 致谢 / Acknowledgments
