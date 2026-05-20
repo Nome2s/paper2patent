@@ -35,7 +35,7 @@
 
 | 使用场景 | 引用方式 |
 |---------|---------|
-| 学术论文 | 本项目仓库地址 + GitHub 用户名 [7toCR/awesome-ai-prompt](https://github.com/7toCR/paper2patent) |
+| 学术论文 | 本项目仓库地址 + GitHub 用户名 [7toCR/paper2patent](https://github.com/7toCR/paper2patent) |
 | 技术博客 / 文章 | 在正文或参考链接中注明原始来源 |
 | GitHub 仓库 | 在 README 中添加链接指向本仓库 |
 | 演讲 / 分享 | 在演讲材料中标注参考来源 |
